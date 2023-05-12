@@ -1,0 +1,7 @@
+asgiref==3.4.0
+Django==3.2
+djangorestframework==3.14.0
+Pygments==2.14.0
+pytz==2022.7.1
+sqlparse==0.4.3
+tzdata==2022.7

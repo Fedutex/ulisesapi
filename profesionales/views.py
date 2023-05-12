@@ -22,6 +22,8 @@ def prof_list(request):
     """
     Profesionales
     """
+    myResponse = ['no hay respuesta por ahora butinos']
+
     if request.method == 'POST':
         payload = JSONParser().parse(request)
         print(payload)
@@ -49,13 +51,14 @@ def prof_list(request):
 
         ]
         # print(serializer.data)
-        return Response(myResponse)
+    
+    return Response(myResponse)
 
-    if request.method == 'GET':
-        snippets = Snippet.objects.all()
-        serializer = SnippetSerializer(snippets, many=True)
-        print(serializer.data)
-        return Response(serializer.data)
+    # if request.method == 'GET':
+    #     snippets = Snippet.objects.all()
+    #     serializer = SnippetSerializer(snippets, many=True)
+    #     print(serializer.data)
+        # return Response(serializer.data)
 
 
 @api_view(['GET', 'POST'])
