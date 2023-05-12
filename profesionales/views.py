@@ -20,7 +20,7 @@ from rest_framework.response import Response
 @api_view(['GET', 'POST'])
 def prof_list(request):
     """
-    Profesionales
+    Profesionales prueba v2
     """
     myResponse = ['no hay respuesta por ahora butinos']
 
